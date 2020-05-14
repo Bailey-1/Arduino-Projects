@@ -12,12 +12,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-void loop() {
-//  digitalWrite(buzzPin, HIGH);
-//  delayMicroseconds(1);
-//  digitalWrite(buzzPin, LOW);
-//  delayMicroseconds(1);
-  
+void loop() { 
   for(x=1; x<=1000; x++){
     for(i=1; i<=50; i++){
       digitalWrite(buzzPin, HIGH);

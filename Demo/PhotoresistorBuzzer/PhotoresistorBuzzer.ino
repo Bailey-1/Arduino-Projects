@@ -5,14 +5,13 @@
 int lightPin = A0;
 int lightVal;
 
-int greenLed = 11;
-int redLed = 10;
+int buzzPin = 8;
+int delayTime;
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(lightPin, INPUT);
-  pinMode(greenLed, OUTPUT);
-  pinMode(redLed, OUTPUT);
+  pinMode(buzzPin, OUTPUT);
   
   Serial.begin(9600);
 }
@@ -20,14 +19,12 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   lightVal = analogRead(lightPin);
-  Serial.println(lightVal);
+  delayTime = (9./550.)*lightVal - (9.*200./550.)+1;
 
-  if(lightVal <= 500){
-    digitalWrite(redLed, HIGH);
-    digitalWrite(greenLed, LOW);
-  } else {
-    digitalWrite(redLed, LOW);
-    digitalWrite(greenLed, HIGH);
-  }
-  delay(50);
+  Serial.println(delayTime);
+  
+//  digitalWrite(buzzPin, HIGH);
+//  delayMicroseconds(delayTime);
+//  digitalWrite(buzzPin, LOW);
+//  delayMicroseconds(delayTime);
 }

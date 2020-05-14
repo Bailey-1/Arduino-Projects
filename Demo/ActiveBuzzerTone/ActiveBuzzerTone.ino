@@ -41,7 +41,6 @@ void loop() {
     Serial.print(x);
     Serial.print(" i: ");
     Serial.println(i);
-    
     }
   }
 }
