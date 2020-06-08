@@ -13,6 +13,7 @@ int buttonVal;
 int stepperForwards = true;
 int recent = 1;
 
+//Stepper myStepper(stepsPerRevolution, 8,10,9,11);
 Stepper myStepper(stepsPerRevolution, 8,10,9,11);
 
 void setup() {
@@ -37,8 +38,10 @@ void loop() {
 
   if (stepperForwards == 0){
     myStepper.step(6);
+    Serial.println("Forwards");
   } else {
     myStepper.step(-6);
+    Serial.println("Backwards");
   }
   
   recent = buttonVal;
