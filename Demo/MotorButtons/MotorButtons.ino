@@ -71,5 +71,4 @@ void loop() {
   
   upButtonOld = upButtonVal;
   downButtonOld = downButtonVal;
-  delay(100);
 }
