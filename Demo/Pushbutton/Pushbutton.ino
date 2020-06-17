@@ -1,3 +1,7 @@
+/*
+ * Use a pushbutton with a pull up resistor
+ */
+ 
 int ledPin = 8;
 int buttonPin = 12;
 int buttonRead;

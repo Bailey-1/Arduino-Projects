@@ -2,6 +2,7 @@
  * 16*2 LCD Display
  */
 #include <LiquidCrystal.h>
+
 int rs = 7;
 int en = 8;
 int d4 = 9;

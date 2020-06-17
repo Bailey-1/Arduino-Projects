@@ -5,8 +5,9 @@ Pulse an LED with analogWrite. analogWrite changes the voltage from 0v - 5v over
 int redLed = 9;
 
 void setup() {
-  Serial.begin(9600);  
   pinMode(redLed, OUTPUT);
+  
+  Serial.begin(9600);  
 }
 
 void loop() {
