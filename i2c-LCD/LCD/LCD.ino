@@ -2,8 +2,8 @@
  * 16*2 LCD I2C Display Example
  * 
  * Simple Pins for Single I2C Device - Will have issues if more are added or required.
- * SCL = A4
- * SDA = A5
+ * SCL = A5
+ * SDA = A4
  * VCC = 5V
  * GND = GND
  */
